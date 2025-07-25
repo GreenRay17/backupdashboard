@@ -33,7 +33,7 @@ export default function DashboardBackupStatus() {
 
   function fetchJson(dateStr) {
     setLoading(true);
-    const url = `https://sharepoint.domain.com/sites/backup/rapport_${dateStr}.json`;
+    const url = `../public/rapports/rapport_${dateStr}.json`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
